@@ -1,7 +1,5 @@
-window.addEventListener('scroll', () => {
+const mobileMenu = document.getElementById("menuIcon");
 
-    const {scrollTop, clientHeight} = document.documentElement;
-
-    console.log(scrollTop, clientHeight);
-
-})
+mobileMenu.addEventListener("click", () => {
+  console.log("asdfasdfas");
+});

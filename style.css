@@ -18,7 +18,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Montserrat;
+  font-family: "Advent Pro", sans-serif;
 }
 
 main {
@@ -126,7 +126,7 @@ ul {
   font-weight: normal;
   font-size: 28px;
   display: flex;
-  text-align: center;
+  text-align: justify;
   padding-top: 1.5rem;
 }
 .phoneAboutMe {
@@ -139,6 +139,170 @@ ul {
   display: block;
   padding: 4rem;
 }
+.phoneWhatCantIdo {
+  display: block;
+  height: 100vh;
+  padding: 4rem;
+  /* background-color: hsl(0, 0%, 30%); */
+  background-color: black;
+}
+.phoneWhatCantIdo .title {
+  font-family: "Advent Pro", sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  display: flex;
+  padding-bottom: 1rem;
+  justify-content: flex-start;
+  z-index: 1;
+  position: relative;
+  color: white;
+}
+.phoneWhatCantIdo .txt {
+  font-family: "Advent Pro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  display: flex;
+  color: whitePX;
+  text-align: justify;
+  justify-content: center;
+  padding-bottom: 2rem;
+  color: white;
+}
+.phoneWhatCantIdo-img {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2.5rem;
+}
+.phoneWhatCantIdo-img img {
+  width: 200px;
+}
+.phoneWhatCantIdo .iconify {
+  font-size: 3rem;
+  padding-right: 0.5rem;
+}
+.phoneWhatCantIdo-mainBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+.phoneSkills-first {
+  display: block;
+  padding: 4rem;
+  background-image: url("img/wave-haikei.png");
+  background-size: 150px;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none;
+}
+.phoneSkills {
+  height: auto;
+}
+
+.phoneSkills-MainTitle {
+  font-size: 25px;
+  color: white;
+  border: solid white 0.5rem;
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: bold;
+}
+.phoneSkills-titleBox {
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+}
+.phoneSkills-title {
+  color: white;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+.phoneSkills-imgs .iconify {
+  font-size: 10rem;
+}
+.phoneSkills-imgs {
+  padding-top: 4rem;
+}
+.phoneSkills-img {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.phoneSkills-mainBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.phoneSkills-imgTXT {
+  font-size: 2rem;
+  color: black;
+  font-family: "Advent Pro", sans-serif;
+  padding-top: 1rem;
+}
+.phoneSkills-imgTXT {
+  display: flex;
+  justify-content: center;
+}
+.phonePortfolio {
+  display: block;
+  height: auto;
+}
+
+.phonePortfolioLogo-mainBOX {
+  background-image: url("/img/Snapchat-822066840.jpg");
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  text-decoration: none;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.phonePortfolioLogo-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.phonePortfolioLogo-title-txt {
+  color: white;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  border: solid white 0.5rem;
+  padding: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-weight: bold;
+}
+.desktopAboutME {
+  display: none;
+}
+.desktopWhatCantIdo {
+  display: none;
+}
+.deskdopSkill {
+  display: none;
+}
+.deskdopPortfolioTitle {
+  display: none;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media only screen and (min-width: 600px) {
   main {
     display: none;
@@ -175,7 +339,7 @@ ul {
   .title {
     font-family: "Advent Pro", sans-serif;
     font-size: 40px;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
     padding-left: 0.5rem;
   }
   .name {
@@ -209,4 +373,260 @@ ul {
   .phoneAboutMe {
     display: none;
   }
-} ;
+  .phoneWhatCantIdo {
+    display: none;
+  }
+  .phoneSkills {
+    display: none;
+  }
+  .phonePortfolio {
+    display: none;
+  }
+  .phonePortfolioLogo {
+    display: none;
+  }
+  .phoneSkills-first {
+    display: none;
+  }
+  .desktopAboutME {
+    display: block;
+    width: 100%;
+    height: 213px;
+    background-color: hsl(0, 0%, 11%);
+  }
+  .desktopAboutME-mainBox {
+    display: flex;
+    height: auto;
+  }
+  .desktopAboutME-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+    color: white;
+  }
+  .desktopAboutME-title {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+  .desktopAboutME-txt {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 15px;
+  }
+  .desktopAboutME-icon .iconify {
+    font-size: 12rem;
+  }
+  .desktopAboutME-icon {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    transform: rotate(30deg);
+    color: hsl(0, 0%, 13%);
+  }
+
+  .desktopWhatCantIdo {
+    display: block;
+  }
+  .desktopWhatCantIdo-mainBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .DKfirst {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5rem;
+  }
+  .desktopWhatCantIdo-mainBox .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .desktopWhatCantIdo-mainBox .txt {
+    padding-top: 0.5rem;
+    text-align: justify;
+    width: 300px;
+    font-size: 1rem;
+  }
+  .desktopDesign {
+    padding-right: 5rem;
+  }
+  .desktopWhatCanIC {
+    color: hsl(0, 0%, 70%);
+  }
+  .desktopWhatCantIdo-img {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+  }
+  .desktopWhatCantIdo-img img {
+    width: 100px;
+    height: 20px;
+  }
+  .deskdopSkill {
+    display: block;
+    padding-right: 25rem;
+    padding-left: 25rem;
+  }
+  .deskdopSkill-mainBox {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .deskdopSkill-title-box {
+    display: flex;
+    justify-content: center;
+  }
+  .deskdopSkill-title {
+    font-weight: bold;
+    border: black solid 0.5rem;
+    font-size: 25px;
+    padding: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .deskdopSkill-imgs .iconify {
+    font-size: 5rem;
+  }
+  .deskdopSkills-imgTXT {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+  }
+  .deskdopSkills-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+  .deskdopSkill-imgs {
+    display: flex;
+  }
+  .deskdopSkill-FB,
+  .deskdopSkill-FT {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .deskdopSkill-FS {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .deskdopPortfolioTitle-TXT {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .deskdopPortfolioTitle {
+    display: block;
+  }
+  .deskdopPortfolioTitle-mainBox {
+    background-color: hsl(0, 0%, 11%);
+    height: 200px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    color: white;
+  }
+  .deskdopPortfolioTitle-TXT {
+    border: white solid 0.5rem;
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .deskdopPortfolio-mainBox .img {
+    width: 100%;
+    height: 300px;
+  }
+  .deskdopPortfolio-1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(img/Snapchat-16907427802.jpg);
+  }
+  .deskdopPortfolio-2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(img/Snapchat-822066840.jpg);
+  }
+  .deskdopPortfolio-3 {
+    background-image: url(img/Snapchat-16907427802.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .deskdopPortfolio-4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(img/Snapchat-1566244487.jpg);
+  }
+  .deskdopPortfolio-5 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(img/Snapchat-1690742780~3.jpg);
+  }
+  .deskdopPortfolio-6 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(img/Snapchat-1033243155.jpg);
+  }
+  .deskdopPortfolio-links-firstRow {
+    display: flex;
+  }
+  .deskdopPortfolio-insideIMG-title {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .deskdopPortfolio-insideIMG-mainBOX {
+    display: none;
+  }
+  .deskdopPortfolio-insideIMG {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    color: white;
+  }
+  .deskdopPortfolio-insideIMG-txt {
+    text-align: justify;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .deskdopPortfolio-insideIMG a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    border-left: 0.2rem white solid;
+    border-right: 0.2rem white solid;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 2rem;
+  }
+  .deskdopPortfolio-insideIMG a:hover {
+    color: gray;
+    border-left: gray 0.2rem solid;
+    border-right: gray 0.2rem solid;
+  }
+  .deskdopPortfolio-mainBox .img:hover .deskdopPortfolio-insideIMG-mainBOX {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  /* .deskdopPortfolio-mainBox .img:hover {
+    filter: blur(4px);
+    animation: 700ms;
+  } */
+}

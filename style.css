@@ -98,7 +98,7 @@ ul {
 }
 .welcomeIcon {
   color: white;
-  font-size: 25px;
+  font-size: 30px;
   padding-top: 25px;
 }
 .welcomeIcons {
@@ -109,7 +109,7 @@ ul {
 .phoneAboutMe-title {
   font-family: "Advent Pro", sans-serif;
   font-weight: bold;
-  font-size: 42px;
+  font-size: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,6 +128,7 @@ ul {
   display: flex;
   text-align: justify;
   padding-top: 1.5rem;
+  font-weight: bold;
 }
 .phoneAboutMe {
   background-image: url("img/Snapchat-1566244487.jpg");
@@ -315,7 +316,7 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url(img/Snapchat-16907427802.jpg);
+  background-image: url(img/queen.png);
 }
 
 .phonePortoflio-img-2 {
@@ -605,7 +606,7 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url(img/Snapchat-16907427802.jpg);
+    background-image: url(img/queen.png);
   }
   .deskdopPortfolio-2 {
     background-size: cover;
@@ -684,5 +685,17 @@ ul {
   }
   .deskdopPortfolio {
     display: block;
+  }
+  .desktopWelcomeInfo {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  .desktopWelcomeIMGbox .iconify {
+    color: gray;
+    font-size: 20rem;
+    margin-right: 10rem;
   }
 }

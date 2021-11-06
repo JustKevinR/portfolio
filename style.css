@@ -301,6 +301,63 @@ ul {
 .deskdopPortfolioTitle {
   display: none;
 }
+.deskdopPortfolio {
+  display: none;
+}
+.somethingbig {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.phonePortoflio-img-1 {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(img/Snapchat-16907427802.jpg);
+}
+
+.phonePortoflio-img-2 {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(img/Snapchat-822066840.jpg);
+}
+.phonePortoflio-img-3 {
+  width: 100%;
+  height: 300px;
+  background-image: url(img/Snapchat-16907427802.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.phonePortoflio-img-4 {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(img/Snapchat-1566244487.jpg);
+}
+.phonePortoflio-img-5 {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(img/Snapchat-1690742780~3.jpg);
+}
+.phonePortoflio-img-6 {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(img/Snapchat-1033243155.jpg);
+}
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media only screen and (min-width: 600px) {
@@ -625,8 +682,7 @@ ul {
     display: block;
     background-color: rgba(0, 0, 0, 0.4);
   }
-  /* .deskdopPortfolio-mainBox .img:hover {
-    filter: blur(4px);
-    animation: 700ms;
-  } */
+  .deskdopPortfolio {
+    display: block;
+  }
 }

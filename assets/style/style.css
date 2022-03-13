@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navbar-backgroud: hsl(0, 0%, 0%);
+    --navbar-text-color: hsl(0, 0%, 100%);
+    --navbar-hover-background-color: hsl(0, 0%, 100%);
+    --navbar-hover-text-color: hsl(0, 0%, 0%);
+    --navbar-box-shadow: hsl(73, 67%, 68%);
+    --home-title-color: hsl(0, 0%, 100%);
+    --about-backgroud: hsl(0, 0%, 0%);
+    --about-text-color: hsl(0, 0%, 100%);
+    --main-font: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+
+.navbar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--navbar-backgroud);
+      position: fixed;
+      width: 100%;
+      opacity: .7;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px; /*up & down 20px*/
+}
+
+.navbar ul li{
+    font-size: 1.1rem;
+    font-family: var(--main-font)
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--navbar-text-color);
+    padding: 8px 25px; /*up & down 8px, left & right 25px*/
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: var(--navbar-hover-background-color);
+    color: var(--navbar-hover-text-color);
+    box-shadow: 0 0 10px var(--navbar-box-shadow);
+}
+
+/* Home */
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(12, 6, 8, 0.603)), url("https://media.giphy.com/media/doXBzUFJRxpaUbuaqz/giphy.gif") no-repeat center center/cover;
+}
+
+.title{
+    color: var(--home-title-color);
+    font-family: var(--main-font);
+    font-size: 3rem;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h2{
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 900;
+    color: white;
+    padding: .5rem;
+}
+
+.main p{
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+.main p1{
+ color: rgb(241, 42, 42);   
+}
+
+.main p2{
+    color: green;
+}
+
+.main p3{
+    color: rgb(43, 43, 231);
+}
+
+/* about me */
+
+#about{
+    background-color: var(--about-backgroud);
+    color: var(--about-text-color);
+    font-family: 'Advent Pro', sans-serif;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px yellow
+}
+
+.icons{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+#about .iconify{
+    font-size: 1.5rem;
+}
+
+#about h1{
+    font-family: var(--main-font);
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+#about p2{
+    color: yellow;
+    font-weight: 900;
+}
+
+/* portfolio */
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+
+}
+
+.gallery img{
+    width: 360px;
+    height: 240px;
+    opacity: .5;
+}
+
+.gallery a{
+    border: 3px rgba(241, 237, 237, 0.863) solid;
+    margin: 8px 0;
+}
+
+.headings{
+    font-family: var(--main-font);
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+/* skills */
+
+#skills{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
+    color: white;
+    font-family: 'Advent Pro', sans-serif;
+    border:  1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(245, 245, 245) 50%, rgb(0, 0, 0) 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+
+.box .iconify:last-child{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.box:hover{
+    background-position: left bottom;
+    box-shadow: 0 0 30px rgb(2, 151, 250);
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+.box:hover .headings{
+    color: black;
+}

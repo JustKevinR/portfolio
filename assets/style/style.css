@@ -11,10 +11,11 @@
     --navbar-text-color: hsl(0, 0%, 100%);
     --navbar-hover-background-color: hsl(0, 0%, 100%);
     --navbar-hover-text-color: hsl(0, 0%, 0%);
-    --navbar-box-shadow: hsl(73, 67%, 68%);
+    --navbar-box-shadow: rgb(2, 151, 250);
     --home-title-color: hsl(0, 0%, 100%);
     --about-backgroud: hsl(0, 0%, 0%);
     --about-text-color: hsl(0, 0%, 100%);
+    --box-shadow-hover: rgb(2, 151, 250);
     --main-font: 'Roboto', sans-serif;
 }
 
@@ -207,7 +208,7 @@
     transition: all .8s;
 }
 
-.box .iconify:last-child{
+.box .iconify{
     margin-top: 2rem;
     font-size: 2rem;
 }
@@ -222,3 +223,9 @@
 .box:hover .headings{
     color: black;
 }
+
+@media only screen and (max-width: 800px) {
+    .navbar ul li a {
+        padding: 8px 10px;
+    }
+  }

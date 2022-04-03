@@ -17,6 +17,7 @@
     --about-text-color: hsl(0, 0%, 100%);
     --box-shadow-hover: rgb(2, 151, 250);
     --main-font: 'Roboto', sans-serif;
+    --purple: rgb(90, 8, 79);
 }
 
 /* Navbar */
@@ -62,7 +63,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(12, 6, 8, 0.603)), url("https://media.giphy.com/media/doXBzUFJRxpaUbuaqz/giphy.gif") no-repeat center center/cover;
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(12, 6, 8, 0.603)), url("https://media.giphy.com/media/Wm9XlKG2xIMiVcH4CP/giphy.gif") no-repeat center center/cover;
 }
 
 .title{
@@ -100,7 +101,7 @@
 }
 
 .main p3{
-    color: rgb(43, 43, 231);
+    color: rgb(50, 101, 241);
 }
 
 /* about me */
@@ -110,7 +111,7 @@
     color: var(--about-text-color);
     font-family: 'Advent Pro', sans-serif;
     padding: 1.5rem;
-    box-shadow: 0 0 10px yellow
+    box-shadow: 0 0 10px rgb(90, 8, 79)
 }
 
 .icons{
@@ -139,9 +140,11 @@
 /* portfolio */
 
 #portfolio{
+    
     display: flex;
     flex-direction: column;
     background-color: black;
+    box-shadow: 0px -13px 11px 7px rgb(0 0 0);
 }
 
 .gallery{
@@ -159,7 +162,7 @@
 }
 
 .gallery a{
-    border: 3px rgba(241, 237, 237, 0.863) solid;
+    border: 3px var(--purple) solid;
     margin: 8px 0;
 }
 
@@ -176,7 +179,7 @@
 /* skills */
 
 #skills{
-    background-color: rgb(255, 255, 255);
+    background-color: var(--purple);
     display: flex;
     flex-direction: column;
     padding: 20px;
